@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form Example</h1>
+    <p id="description">A short survey to complete.</p>
+    <form id="survey-form">
+      <fieldset>
+        <h4>Enter Some Basic Infomation</h4>
+        <label id="name-label">Enter Your Name<input placeholder="John Smith" type="text" id="name" required/></label>
+        <label id="email-label">Enter Your Email<input placeholder="Asd@gmail.com" type="email" id="email" required/></label>
+        <label id="number-label">Enter A Number<input placeholder="12" min="0" max="99" type="number" id="number" required/></label>
+      </fieldset>
+      <fieldset>
+        <h4>Choose Wisely..</h4>
+        <label id="dropdown-label">Pick One:
+          <select id="dropdown">
+            <option>a</option>
+            <option>a</option>
+            <option>a</option>
+          </select>
+        </label>
+        <label for="radio-one"><input value="1" id="radio-one" type="radio" name="radio-option" checked/> Option A</label>
+        <label for="radio-two"><input value="2" id="radio-two" type="radio" name="radio-option" /> Option B</label>
+      </fieldset>
+      <fieldset>
+        <h4>Please Check Both Boxes</h4>
+        <label for="checkbox-one"><input value="3" id="checkbox-one" type="checkbox" checked>Checkbox One</label>
+        <label for="checkbox-two"><input value="4" id="checkbox-two" type="checkbox">Checkbox Two</label>
+        
+      </fieldset>
+      <fieldset>
+        <h4>Tell Us Some Things About You</h4>
+        <textarea placeholder="Enter Some Text"> </textarea>
+      </fieldset>
+      <button id="submit" value="submit">Submit</button>
+    </form>
+  </body>
+</hmtl>
