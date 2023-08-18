@@ -1,0 +1,28 @@
+h1 {
+  background-color: #181818;
+  border: 5px solid #252525;
+  color: #eeeeee;
+  padding: 16px;
+  width: 100%;
+  margin: 0px;
+}
+li {
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  font-family: Monospace;
+  font-size: 15px
+}
+
+body {
+  text-align: center;
+  color: #252525;
+  background-color: #eeeeee;
+  font-family: monospace, aria;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
