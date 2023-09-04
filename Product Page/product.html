@@ -1,0 +1,92 @@
+* {
+  --background-color: #181818;
+  --background-color-2: #303030;
+  --acsent-color: brown;
+  --font-color: white;
+
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: monospace;
+}
+
+h1 {color: var(--acsent-color);}
+section {margin-top: 20%;}
+#footer {
+  text-align: right;
+  margin: 5%;
+}
+
+#header {
+  background-color: var(--background-color-2);
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+nav {
+  background-color: var(--background-color-2);
+  position: fixed;
+  right: 0;
+  font-size: 1.2rem;
+  margin: 1%;
+}
+a {
+  color: var(--font-color);
+  transition: 200ms;
+  background-color: var(--background-color-2);
+}
+a:hover {
+  color: var(--acsent-color);
+}
+ul {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+p {padding: 2%;}
+img {
+  max-width: 100px;
+  display: flex;
+}
+
+#signup {
+  text-align: center;
+  min-width: 200px;
+  border: 2px solid var(--font-color);
+  margin: 5%;
+}
+
+input[type="email"] {
+  border: 2px solid var(--acsent-color);
+}
+
+
+#pricing {
+  display: flex;
+  margin: 5%;
+  justify-content: center;
+}
+
+.product {
+  border: 2px solid var(--font-color);
+  min-width: 100px;
+  padding: 5%;
+  width: 22%
+}
+
+.btn {
+  border: 2px solid var(--font-color);
+  color: var(--font-color);
+  background-color: var(--background-color);
+  transition: 200ms;
+  margin-top: 10%;
+}
+.btn:hover {border: 2px solid var(--acsent-color);}
+.btn:active {border: 2px solid var(--background-color);}
+
+ @media (max-width: 800px) {
+  .product {
+    max-width: 300px;
+  }
+ }
