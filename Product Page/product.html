@@ -1,92 +1,90 @@
-* {
-  --background-color: #181818;
-  --background-color-2: #303030;
-  --acsent-color: brown;
-  --font-color: white;
 
-  background-color: var(--background-color);
-  color: var(--font-color);
-  font-family: monospace;
-}
-
-h1 {color: var(--acsent-color);}
-section {margin-top: 20%;}
-#footer {
-  text-align: right;
-  margin: 5%;
-}
-
-#header {
-  background-color: var(--background-color-2);
-  display: flex;
-  width: 100%;
-  position: fixed;
-  top: 0;
-}
-nav {
-  background-color: var(--background-color-2);
-  position: fixed;
-  right: 0;
-  font-size: 1.2rem;
-  margin: 1%;
-}
-a {
-  color: var(--font-color);
-  transition: 200ms;
-  background-color: var(--background-color-2);
-}
-a:hover {
-  color: var(--acsent-color);
-}
-ul {
-  display: flex;
-  justify-content: center;
-  margin: 5%;
-}
-
-p {padding: 2%;}
-img {
-  max-width: 100px;
-  display: flex;
-}
-
-#signup {
-  text-align: center;
-  min-width: 200px;
-  border: 2px solid var(--font-color);
-  margin: 5%;
-}
-
-input[type="email"] {
-  border: 2px solid var(--acsent-color);
-}
-
-
-#pricing {
-  display: flex;
-  margin: 5%;
-  justify-content: center;
-}
-
-.product {
-  border: 2px solid var(--font-color);
-  min-width: 100px;
-  padding: 5%;
-  width: 22%
-}
-
-.btn {
-  border: 2px solid var(--font-color);
-  color: var(--font-color);
-  background-color: var(--background-color);
-  transition: 200ms;
-  margin-top: 10%;
-}
-.btn:hover {border: 2px solid var(--acsent-color);}
-.btn:active {border: 2px solid var(--background-color);}
-
- @media (max-width: 800px) {
-  .product {
-    max-width: 300px;
-  }
- }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product landing page</title>
+  </head>
+  <body>
+    <header id="header">
+      <img alt="logo" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpaperbackdesign.com%2Fwp-content%2Fuploads%2F2015%2F04%2Fgeneric-logo_150ppi-600x300px.jpg&f=1&nofb=1&ipt=b25cf5f17b2899f9c24c928c4e0b4834443e2c6dd5ad75dd61406694899c71c8&ipo=images" id="header-img">
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#signup" class="nav-link">Signup</a>
+        <a href="#footer" class="nav-link">Footer</a>
+      </nav>
+    </header>
+    <p></p>
+    <section id="signup">
+      <h1>Some convicing text to make you sign up</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input name="email" id="email" type="email" placeholder="email@email.com">
+      <input type="submit" id="submit">
+    </section>
+    <section id="videos">
+      <video id="video" src="https://www.youtube.com/watch?v=kpwNjdEPz7E">
+    </section>
+    <section id="features">
+      <ul>
+        <div class="container">
+          <img class="img" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages_k%2Fcomputer-clipart-transparent%2Fcomputer-clipart-transparent-18.png&f=1&nofb=1&ipt=677da2602dee67a9a7e98cd489e7218b6c5ac827642c2b026a21fb506a949b88&ipo=images">
+          <p>Amazing feature 1</p>
+        </div>
+               <div class="container">
+          <img class="img" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages_k%2Fcomputer-clipart-transparent%2Fcomputer-clipart-transparent-18.png&f=1&nofb=1&ipt=677da2602dee67a9a7e98cd489e7218b6c5ac827642c2b026a21fb506a949b88&ipo=images">
+          <p>Amazing feature 2</p>
+        </div>
+                <div class="container">
+          <img class="img" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages_k%2Fcomputer-clipart-transparent%2Fcomputer-clipart-transparent-18.png&f=1&nofb=1&ipt=677da2602dee67a9a7e98cd489e7218b6c5ac827642c2b026a21fb506a949b88&ipo=images">
+          <p>Amazing feature 3</p>
+        </div>
+      </ul>
+    </section>
+    <section id="pricing">
+      <div class="product" id="option1">
+        <h1>Option 1</h1>
+        <h2>£9.99</h2>
+        </h3>/ Per Month</h3>
+        <p>
+    Lorem ipsum.
+    Lorem ipsum.
+    Lorem ipsum dolor.
+    Lorem ipsum.
+</p>
+<button class="btn">CHOOSE</button>
+      </div>
+            <div class="product" id="option1">
+        <h1>Option 2</h1>
+        <h2>£19.99</h2>
+        </h3>/ Per Month</h3>
+        <p>
+    Lorem ipsum.
+    Lorem ipsum.
+    Lorem ipsum dolor.
+    Lorem ipsum.
+</p>
+<button class="btn">CHOOSE</button>
+      </div>
+            <div class="product" id="option1">
+        <h1>Option 3</h1>
+        <h2>£29.99</h2>
+        </h3>/ Per Month</h3>
+        <p>
+    Lorem ipsum.
+    Lorem ipsum.
+    Lorem ipsum dolor.
+    Lorem ipsum.
+</p>
+<button class="btn">CHOOSE</button>
+      </div>
+    </section>
+  </body>
+  <footer id="footer">
+    <h1>Contact Us</h1>
+    <p>Phone 000000000</p>
+    <p>Instagram company</p>
+    <p>Twiiter @company</p>
+  </footer>
+</html>
